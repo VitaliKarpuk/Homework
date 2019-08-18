@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.color_html{
+    color:red;
+}
+.paragraph_1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: blue;
+}
+.paragraph_2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: firebrick;
+}
+.paragraph_3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: darkblue;
+}
+.paragraph_word{
+    font-size: 40px;
+    color: black;
+}
+.list_point{
+    list-style-type: disc;
+}
+.list_paragraph{
+    list-style: none;
+    margin-left:0;
+    padding-left: 25px;
+}
+
+.list_circle{
+    list-style-type: circle
+}
+
+.list_point li{
+    padding-left: 40px;
+}
+.list_circle li{
+    padding-left: 20px;
+}
