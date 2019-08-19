@@ -1,2 +1,2 @@
 # Homework
-The homework branch contains my homework.
+In the homework branch contains my homework.
