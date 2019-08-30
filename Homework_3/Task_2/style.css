@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.item_red{
+    width:49%;
+    height: 100%;
+    background-color: red;
+}
+.item_orange{
+    width: 49%;
+    height: 100%;
+    background-color: orange;
+}
+.item_green{
+    width: 100%;
+    height: 40%;
+    background-color: green;
+}
+footer{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.item_brown{
+    width: 30%;
+    height: 100%;
+    background-color: brown;
+}
+.item_blue{
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}
+.item_violet{
+    width: 30%;
+    height: 100%;
+    background-color: violet;
+}
+@media screen and (device-width: 375px) {
+    .wrapper{
+        display: block;
+    }
+    .item_green{
+        position: absolute;
+        top: 0;
+        height: 25%;
+    }
+    .item_red{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40%;
+    }
+    .item_violet{
+        position: absolute;
+        height: 25%;
+        width: 100%;
+        top:30%;
+    }
+    .item_orange, .item_brown, .item_blue{
+        position: absolute;
+        left: -100000px;
+    }
+   }
+   @media screen and (device-width: 768px) {
+    .wrapper{
+        display: block;
+    }
+
+    .item_orange{
+        position: absolute;
+        top: 0;
+        height: 10%;
+        width: 35%
+    }
+    .item_violet{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 10%;
+        width: 60%;
+    }
+    .item_red{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: 15%;
+    }
+    .item_green{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        width: 48%;
+        height: 30%;
+    }
+    .item_blue{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 48%;
+        height: 30%;
+    }
+    .item_brown{
+        position: absolute;
+        left: -100000px;
+    }
+
+   }
