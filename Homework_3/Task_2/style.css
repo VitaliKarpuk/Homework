@@ -54,6 +54,9 @@ footer{
     height: 100%;
     background-color: violet;
 }
+h1{
+    text-align: center;
+}
 @media screen and (device-width: 375px) {
     .wrapper{
         display: block;
@@ -123,4 +126,9 @@ footer{
         left: -100000px;
     }
 
+   }
+   @media screen and (max-width: 768px) {
+    .wrapper{
+        font-size: 8px;
+    }
    }
