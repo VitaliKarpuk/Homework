@@ -87,24 +87,23 @@ h1{
     .wrapper{
         display: block;
     }
-
     .item_orange{
         position: absolute;
         top: 0;
-        height: 10%;
+        height: 100px;
         width: 35%
     }
     .item_violet{
         position: absolute;
         right: 0;
         top: 0;
-        height: 10%;
+        height: 100px;
         width: 60%;
     }
     .item_red{
         position: absolute;
         width: 100%;
-        height: 50%;
+        height: 500px;
         top: 15%;
     }
     .item_green{
@@ -112,14 +111,14 @@ h1{
         bottom: 0;
         left:0;
         width: 48%;
-        height: 30%;
+        height: 300px;
     }
     .item_blue{
         position: absolute;
         bottom: 0;
         right: 0;
         width: 48%;
-        height: 30%;
+        height: 300px;
     }
     .item_brown{
         position: absolute;

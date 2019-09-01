@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -11,6 +12,20 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.wrapper_button{
+    height: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -999999px;
+    align-items: center;
+}
+.wrapper a{
+    text-decoration: none;
+    background-color: #C3C3C3;
+    padding: 3%;
+    border-radius: 45%;
 }
 header{
     width: 90%;
@@ -27,7 +42,7 @@ header p{
 }
 .content{
     width: 90%;
-    height: 75%;
+    height: 70%;
     background-color: #C3C3C3;
     border-radius: 20px;
     display: flex;
@@ -62,13 +77,3 @@ footer p{
     margin-left: 5% ;
     color: #ffffff;
 }
-@media (max-width: 768px) {
-    .content {
-        width: 80%;
-        height: 50%;
-    }
-    footer{
-        margin-top: 40%;
-    }
-   }
-  
