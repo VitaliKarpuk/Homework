@@ -120,7 +120,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
-@media screen
+@media screen 
 and (min-device-width : 320px) 
 and (max-device-width : 812px){
     .wrapper{
