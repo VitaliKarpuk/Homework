@@ -8,126 +8,105 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-header{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: space-between;
-}
 .item_red{
-    width:49%;
-    height: 100%;
+    width:40%;
+    height: 10%;
     background-color: red;
 }
 .item_orange{
-    width: 49%;
-    height: 100%;
+    width: 58%;
+    height: 10%;
     background-color: orange;
 }
 .item_green{
     width: 100%;
-    height: 40%;
+    height: 55%;
     background-color: green;
 }
-footer{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-}
 .item_brown{
-    width: 30%;
-    height: 100%;
+    width: 32%;
+    height: 30%;
     background-color: brown;
+    align-self: flex-end;
 }
 .item_blue{
-    width: 30%;
-    height: 100%;
+    width: 32%;
+    height: 30%;
     background-color: blue;
+    align-self: flex-end;
 }
 .item_violet{
-    width: 30%;
-    height: 100%;
+    width: 32%;
+    height: 30%;
     background-color: violet;
+    align-self: flex-end;
 }
 h1{
     text-align: center;
 }
-@media screen and (device-width: 375px) {
-    .wrapper{
-        display: block;
-    }
-    .item_green{
-        position: absolute;
-        top: 0;
-        height: 25%;
-    }
-    .item_red{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 40%;
-    }
-    .item_violet{
-        position: absolute;
-        height: 25%;
-        width: 100%;
-        top:30%;
-    }
-    .item_orange, .item_brown, .item_blue{
-        position: absolute;
-        left: -100000px;
-    }
-   }
-   @media screen and (device-width: 768px) {
-    .wrapper{
-        display: block;
-    }
-    .item_orange{
-        position: absolute;
-        top: 0;
-        height: 100px;
-        width: 35%
-    }
-    .item_violet{
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100px;
-        width: 60%;
-    }
-    .item_red{
-        position: absolute;
-        width: 100%;
-        height: 500px;
-        top: 15%;
-    }
-    .item_green{
-        position: absolute;
-        bottom: 0;
-        left:0;
-        width: 48%;
-        height: 300px;
-    }
-    .item_blue{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 48%;
-        height: 300px;
-    }
-    .item_brown{
-        position: absolute;
-        left: -100000px;
-    }
 
-   }
-   @media screen and (max-width: 768px) {
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 667px){
     .wrapper{
         font-size: 8px;
     }
+    .item_green{
+        align-self: flex-start;
+        height: 15%;
+    }
+    .item_red{
+        align-self: flex-end;
+        order: 1;
+        width: 100%;
+        height: 65%;
+    }
+    .item_violet{
+        align-self: flex-end;
+        height: 15%;
+        width: 100%;
+    }
+    .item_orange, .item_brown, .item_blue{
+        display: none;
+    }
    }
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
+    .item_brown{
+        display: none;
+    }
+    .item_orange{
+        order: 1;
+        align-self: flex-start;
+        height: 10%;
+        width: 35%;
+    }
+    .item_violet{
+        order: 2;
+        align-self: flex-start;
+        height: 10%;
+        width: 60%;
+    }
+    .item_red{
+        order: 3;
+        align-self: flex-end;
+        width: 100%;
+        height: 65%;
+    }
+    .item_green{
+        order: 4;
+        align-self: flex-end;
+        width: 45%;
+        height: 20%;
+    }
+    .item_blue{
+        order: 5;
+        align-self: flex-end;
+        width: 45%;
+        height: 20%;
+    }
+}
