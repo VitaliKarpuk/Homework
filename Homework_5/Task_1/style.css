@@ -1,8 +1,8 @@
-#carouselExampleControls{
-    width: 50%;
-    height: 500px;
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
 }
-.slide{
-    width: 50%;
-    height: 500px;
+h2{
+    text-align: center;
 }
