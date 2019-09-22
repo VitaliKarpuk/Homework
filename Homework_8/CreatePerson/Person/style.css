@@ -1,0 +1,14 @@
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+#wrapper input{
+    width: 270px;
+    height: 15px;
+}
+#wrapper p{
+    width: 120px;
+}
