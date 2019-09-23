@@ -1,3 +1,7 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
 #wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -11,4 +15,35 @@
 }
 #wrapper p{
     width: 120px;
+}
+.info{
+    width: 700px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+#elemName{
+    border: 1px solid red;
+    width: 200px;
+    height: 30px;
+}
+#elemSurname{
+    border: 1px solid red;
+    width: 90px;
+    height: 30px;
+}
+#elemAge{
+    border: 1px solid red;
+    width: 90px;
+    height: 30px;
+}
+#elemOrganization{
+    border: 1px solid red;
+    width: 90px;
+    height: 30px;
+}
+.info button{
+    height: 30px;
 }
