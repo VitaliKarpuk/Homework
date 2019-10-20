@@ -16,7 +16,6 @@ const inputDrivingExperience = '<p>Стаж вождения</p><input type = "t
 const inputDriverLicense = '<p>Водительские права</p><input type = "text" class = "driverLicense">';
 let allInput = document.getElementsByTagName("input")
 let btnInfo = document.getElementById('btnRemove')
-
 function Person(name, surname, patronymic, age){
     this.name = name;
     this.surname = surname;
@@ -42,9 +41,10 @@ select.onclick = () => {
             localStorage.setItem(user1.name, JSON.stringify(user1));
             Object.values(localStorage).map(function(obj, str) { 
               obj[str] = localStorage.getItem(str);
-               
                 return getData.push(JSON.parse(obj))
-            }, {});
+            });
+            localStorage.setItem("users", JSON.stringify(getData))
+            let a = JSON.parse(localStorage.getItem("users"))
             info.innerHTML = ''
             getData.map( (item, index) => {
                 let elemName = document.createElement('div')
@@ -69,15 +69,15 @@ select.onclick = () => {
                 elemSurname.id = "elemSurname"
                 elemAge.id = "elemAge"
                 elemOrganization.id = "elemOrganization"
-                btnRemove.id = getData[index].name
+                btnRemove.id = a[index].name
                 btnRedact.id = 'btnRedact'
                 btnRemove.onclick = (el) => {
-                    console.log(getData)  
-                    getData = getData.filter((item, index) => {
-                        return getData[index].name != btnRemove.id 
+                    a = a.filter((item, index) => {
+                        return a[index].name != btnRemove.id 
                     })
-                    localStorage.setItem('dataUsers',JSON.stringify(getData));    
+                    localStorage.setItem('users',JSON.stringify(a));    
                 }
+
             })    
         }
     } else {
@@ -131,5 +131,3 @@ select.onclick = () => {
         }
     }    
 }
-
-
