@@ -1,0 +1,23 @@
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    width:  700px;
+}
+.form div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.form div input{
+    width: 500px;
+    height: 20px;
+}
+.form div p{
+    margin: 0;
+}
+table{
+    width: 600px;
+    margin-top: 40px;
+}

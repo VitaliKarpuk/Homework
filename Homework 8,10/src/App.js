@@ -1,21 +1,10 @@
 import React from "react";
-
 import '../src/styles/App.scss';
-import Header from './components/Header/Header'
-
-
-
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <div>
-                    <h1>My React App!</h1>
-                </div>
-                <Header />
-            </div>
-        );
-    }
+import { BtnCreate } from './components/BtnCreate'
+export const App = () =>{
+    return (
+        <div>
+            <BtnCreate />
+        </div>
+    );
 }
-
-export default App; 
